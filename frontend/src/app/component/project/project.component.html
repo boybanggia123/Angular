@@ -1,0 +1,36 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>SST</th>
+            <th>Tên dự án</th>
+            <th>Vốn</th>
+            <th>Quản lý dự án</th>
+            <th>Ngày bắt đầu</th>
+            <th>Ngày kết thúc</th>
+            <th>Tùy chỉnh</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of listProjects">
+            <td>{{p.id}}</td>
+            <td>{{p.name_project}}</td>
+            <td>{{p.price}}</td>
+            <td>{{ userNames[p.project_to_user] || 'Unknown'}}</td>
+            <td>{{p.day_start | date:'dd/mm/yy'}}</td>
+            <td>{{p.day_end | date:'dd/mm/yy'}}</td>
+            <td>
+                 <button type="button" class="btn btn-outline-success " ><a class="nav-link" [routerLink]="['/project-edit',p.id]">Sửa</a></button> 
+                <button type="button" class="btn btn-outline-danger" (click)="deleteProject(p.id)">Xóa</button>
+            </td>
+            <!-- <td>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" routerLink="/projects-detail/{{p.id}}"> chi tiết</button>
+            </td> -->
+        </tr>
+    </tbody>
+  </table>
+<button type="button" class="btn btn-outline-primary" >
+    <a routerLink="/project-add" class="nav-link ">Thêm mới</a>
+    </button>
+
+  

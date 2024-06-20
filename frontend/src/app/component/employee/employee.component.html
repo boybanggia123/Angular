@@ -1,0 +1,30 @@
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>SST</th>
+            <th>Tên người nhận</th>
+            <th>Chứ vụ</th>
+            <th>Phòng ban</th>
+           
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of listEmployees">
+            <td>{{e.id}}</td>
+            <td>{{e.name_employee}}</td>
+            <td>{{e.position}}</td>
+            <td>
+                <button type="button" class="btn btn-outline-success">Sửa</button>
+                <button type="button" class="btn btn-outline-danger">Xóa</button>
+            </td>
+            <!-- <td>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" routerLink="/projects-detail/{{p.id}}"> chi tiết</button>
+            </td> -->
+        </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-outline-primary">Thêm mới</button>
+
+  

@@ -1,0 +1,31 @@
+<h2>Add Project</h2>
+<form (ngSubmit)="addProject()" class="text-start">
+  <div class="mb-3">
+    <label for="name_project" class="form-label">Name project</label>
+    <input type="text" id="name_project" class="form-control" [(ngModel)]="project.name_project" name="name_project" required>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Price</label>
+    <input type="text" id="price" class="form-control" [(ngModel)]="project.price" name="price" required>
+  </div>
+  <div class="mb-3">
+    <label for="leader" class="form-label">Leader</label>
+    <input type="text" id="leader" class="form-control" [(ngModel)]="project.leader" name="leader" required>
+  </div>
+  <div class="mb-3">
+    <label for="day_start" class="form-label">Day start</label>
+    <input type="date" id="day_start" class="form-control" [(ngModel)]="project.day_start" name="day_start" required>
+  </div>
+  <div class="mb-3">
+    <label for="day_end" class="form-label">Day end</label>
+    <input type="date" id="day_end" class="form-control" [(ngModel)]="project.day_end" name="day_end" required>
+  </div>
+  <div class="mb-3">
+    <label for="project_to_user" class="form-label">User</label>
+    <select id="project_to_user" class="form-control" [(ngModel)]="selectedUser" name="project_to_user" required>
+      
+      <option *ngFor="let user of users" [value]="user.id">{{ user.name_user }}</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Thêm dự án</button>
+</form>

@@ -1,0 +1,31 @@
+
+  <table class="table table-striped">
+    <thead>
+        <tr>
+            <th>SST</th>
+            <th>Tên việc làm</th>
+            <th>Dự án</th>
+            <th>Người làm dự án</th>
+            <th>Trạng thái</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let t of listTasks">
+            <td>{{t.id}}</td>
+            <td>{{t.name_task}}</td>
+            <td>{{t.projectId}}</td>
+            <td>{{t.assignedTo}}</td>
+            <td>{{t.status}}</td>
+            <td>
+                <button type="button" class="btn btn-outline-success">Sửa</button>
+                <button type="button" class="btn btn-outline-danger">Xóa</button>
+            </td>
+            <!-- <td>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" routerLink="/projects-detail/{{p.id}}"> chi tiết</button>
+            </td> -->
+        </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-outline-primary">Thêm mới</button>
+
+  

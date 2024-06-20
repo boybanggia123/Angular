@@ -1,0 +1,93 @@
+<div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+  <div class="toast show">
+    <div class="toast-header">
+      <strong class="me-auto">Đang làm</strong>
+     
+    </div>
+    <div class="toast-body">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">First item</a>
+        <a href="#" class="list-group-item list-group-item-action">Second item</a>
+        <a href="#" class="list-group-item list-group-item-action">Third item</a>
+      </div>
+    </div>
+  </div>
+  <div class="toast show">
+    <div class="toast-header">
+      <strong class="me-auto">Đã hoàn thành</strong>
+     
+    </div>
+    <div class="toast-body">
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">First item</a>
+        <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">Second item</a>
+        <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">Third item</a>
+      </div>
+    </div>
+  </div>
+  
+     
+      <div class="toast show">
+        <div class="toast-header">
+          <strong class="me-auto">Thêm việc</strong>
+         
+        </div>
+        <div class="toast-body btn btn-outline-secondary w-100 text-center  ">
+          <a class="dropdown-item rounded-2 " href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">+</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- model -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body " >
+            <h4>Maneger</h4>
+          <div class="container">
+            <div class="row">
+                <div class="col-7">
+                    <label for="" class="form-label"> Tên task</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-7">
+                    <label for="" class="form-label"> Nghi chú</label>
+                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                </div>
+                <div class="col-5 ">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                          Thêm người làm
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link 1</a></li>
+                          <li><a class="dropdown-item" href="#">Link 2</a></li>
+                          <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown mt-4">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                          Thuộc project
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Link 1</a></li>
+                          <li><a class="dropdown-item" href="#">Link 2</a></li>
+                          <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        </ul>
+                      </div>
+                </div>
+               
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary ">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>

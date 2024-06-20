@@ -1,0 +1,23 @@
+
+<h2>Add Employee</h2>
+<form >
+<div class="mb-3">
+    <label for="name_employee" class="form-label">Name employee</label>
+    <input type="text" id="name_employee" class="form-control" [(ngModel)]="employee.name_employee" name="name_employee" required>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Position</label>
+    <input type="text" id="price" class="form-control"  name="price" required>
+  </div>
+  <div class="mb-3">
+    <label for="position" class="form-label">Leader</label>
+    <input type="text" id="position" class="form-control" [(ngModel)]="employee.position" name="position" required>
+  </div>
+  <div class="mb-3"> 
+    <label for="department" class="form-label">Department</label>
+    <input type="text" id="department" class="form-control" [(ngModel)]="employee.department" name="department" required>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Thêm dự án</button>
+</form>
+
